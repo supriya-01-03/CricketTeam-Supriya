@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		942B3B79221EB32F00039BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3B78221EB32F00039BAF /* AppDelegate.swift */; };
-		942B3B7B221EB32F00039BAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3B7A221EB32F00039BAF /* ViewController.swift */; };
 		942B3B7E221EB32F00039BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942B3B7C221EB32F00039BAF /* Main.storyboard */; };
 		942B3B80221EB33000039BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942B3B7F221EB33000039BAF /* Assets.xcassets */; };
 		942B3B83221EB33000039BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942B3B81221EB33000039BAF /* LaunchScreen.storyboard */; };
 		942B3B8E221EB33000039BAF /* CricketTeamSupriyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3B8D221EB33000039BAF /* CricketTeamSupriyaTests.swift */; };
 		942B3B99221EB33000039BAF /* CricketTeamSupriyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3B98221EB33000039BAF /* CricketTeamSupriyaUITests.swift */; };
+		942B3BAA221EB45B00039BAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BA9221EB45B00039BAF /* LoginViewController.swift */; };
+		942B3BAE221EBD8900039BAF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BAD221EBD8900039BAF /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		942B3B75221EB32F00039BAF /* CricketTeamSupriya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricketTeamSupriya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942B3B78221EB32F00039BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		942B3B7A221EB32F00039BAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		942B3B7D221EB32F00039BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		942B3B7F221EB33000039BAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942B3B82221EB33000039BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		942B3B94221EB33000039BAF /* CricketTeamSupriyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CricketTeamSupriyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		942B3B98221EB33000039BAF /* CricketTeamSupriyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketTeamSupriyaUITests.swift; sourceTree = "<group>"; };
 		942B3B9A221EB33000039BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942B3BA9221EB45B00039BAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		942B3BAD221EBD8900039BAF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,12 @@
 		942B3B77221EB32F00039BAF /* CricketTeamSupriya */ = {
 			isa = PBXGroup;
 			children = (
+				942B3BAC221EBD6A00039BAF /* Utils */,
+				942B3BAB221EB4A500039BAF /* Managers */,
+				942B3BA7221EB40400039BAF /* Model */,
+				942B3BA8221EB41700039BAF /* View */,
+				942B3BA6221EB3F900039BAF /* Controllers */,
 				942B3B78221EB32F00039BAF /* AppDelegate.swift */,
-				942B3B7A221EB32F00039BAF /* ViewController.swift */,
-				942B3B7C221EB32F00039BAF /* Main.storyboard */,
 				942B3B7F221EB33000039BAF /* Assets.xcassets */,
 				942B3B81221EB33000039BAF /* LaunchScreen.storyboard */,
 				942B3B84221EB33000039BAF /* Info.plist */,
@@ -123,6 +128,44 @@
 				942B3B9A221EB33000039BAF /* Info.plist */,
 			);
 			path = CricketTeamSupriyaUITests;
+			sourceTree = "<group>";
+		};
+		942B3BA6221EB3F900039BAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				942B3BA9221EB45B00039BAF /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		942B3BA7221EB40400039BAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		942B3BA8221EB41700039BAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				942B3B7C221EB32F00039BAF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		942B3BAB221EB4A500039BAF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		942B3BAC221EBD6A00039BAF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				942B3BAD221EBD8900039BAF /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				942B3B7B221EB32F00039BAF /* ViewController.swift in Sources */,
+				942B3BAA221EB45B00039BAF /* LoginViewController.swift in Sources */,
 				942B3B79221EB32F00039BAF /* AppDelegate.swift in Sources */,
+				942B3BAE221EBD8900039BAF /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
