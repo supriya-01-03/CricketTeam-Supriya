@@ -25,12 +25,22 @@ func getUserToken() -> String? {
     return ""
 }
 
+
+//MARK: - UI Helpers
+
 func getPlaceholderImage() -> UIImage? {
     return UIImage(named: "placeholder")
 }
 
+func getBoldString(string: String, size: Int) -> NSMutableAttributedString {
+    return NSMutableAttributedString(string: string,
+                                     attributes: [NSAttributedString.Key.font: UIFont(name: "Avenir-Heavy", size: CGFloat(size))!, NSAttributedString.Key.foregroundColor: UIColor.black])
+}
 
-//MARK: - UI Helpers
+func getRegularString(string: String, size: Int) -> NSMutableAttributedString {
+    return NSMutableAttributedString(string: string,
+                                     attributes: [NSAttributedString.Key.font: UIFont(name: "Avenir-Medium", size: CGFloat(size))!, NSAttributedString.Key.foregroundColor: UIColor.black])
+}
 
 open class CustomLoadingView {
     

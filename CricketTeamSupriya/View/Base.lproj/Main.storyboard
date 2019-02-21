@@ -281,6 +281,75 @@
             </objects>
             <point key="canvasLocation" x="570" y="17.95774647887324"/>
         </scene>
+        <!--Player Detail View Controller-->
+        <scene sceneID="v1z-Q5-oU5">
+            <objects>
+                <viewController storyboardIdentifier="playerDetailView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qME-Nc-D9J" customClass="CTPlayerDetailViewController" customModule="CricketTeamSupriya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qMZ-zL-uYL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZZi-bG-LGK">
+                                <rect key="frame" x="35" y="36" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="cvS-L3-6sH"/>
+                                    <constraint firstAttribute="width" secondItem="ZZi-bG-LGK" secondAttribute="height" multiplier="1:1" id="tJK-RL-Rwu"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="25" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-AS-fNR">
+                                <rect key="frame" x="16" y="302" width="288" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playerDetailCell" rowHeight="25" id="Alq-gf-QpG" customClass="CTPlayerDetailTableviewCell" customModule="CricketTeamSupriya" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="25"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Alq-gf-QpG" id="CPh-zv-yK0">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="25"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xt-sY-NXW" userLabel="playerId">
+                                                    <rect key="frame" x="8" y="2.5" width="272" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0xt-sY-NXW" firstAttribute="centerY" secondItem="CPh-zv-yK0" secondAttribute="centerY" id="3AA-oq-Gj0"/>
+                                                <constraint firstItem="0xt-sY-NXW" firstAttribute="centerX" secondItem="CPh-zv-yK0" secondAttribute="centerX" id="XA3-eA-jxJ"/>
+                                                <constraint firstItem="0xt-sY-NXW" firstAttribute="leading" secondItem="CPh-zv-yK0" secondAttribute="leading" constant="8" id="fp1-N1-jb1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="0xt-sY-NXW" id="WdA-Ef-zYS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qME-Nc-D9J" id="AcV-yz-3Io"/>
+                                    <outlet property="delegate" destination="qME-Nc-D9J" id="1iT-s2-rwP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a0f-AS-fNR" firstAttribute="leading" secondItem="3GT-nI-nk4" secondAttribute="leading" constant="16" id="Hcg-K5-aou"/>
+                            <constraint firstItem="ZZi-bG-LGK" firstAttribute="top" secondItem="3GT-nI-nk4" secondAttribute="top" constant="16" id="LAP-bw-Ty0"/>
+                            <constraint firstItem="3GT-nI-nk4" firstAttribute="bottom" secondItem="a0f-AS-fNR" secondAttribute="bottom" constant="16" id="R3T-lh-zjS"/>
+                            <constraint firstItem="a0f-AS-fNR" firstAttribute="top" secondItem="ZZi-bG-LGK" secondAttribute="bottom" constant="16" id="Wnq-h2-JCf"/>
+                            <constraint firstItem="3GT-nI-nk4" firstAttribute="trailing" secondItem="a0f-AS-fNR" secondAttribute="trailing" constant="16" id="Z3p-SW-Z0w"/>
+                            <constraint firstItem="ZZi-bG-LGK" firstAttribute="centerX" secondItem="3GT-nI-nk4" secondAttribute="centerX" id="xFl-Nu-AL7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3GT-nI-nk4"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayImageview" destination="ZZi-bG-LGK" id="RUx-ij-y4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GzO-Xd-c7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="16"/>
+        </scene>
     </scenes>
     <resources>
         <image name="loginBackground" width="1182" height="888"/>

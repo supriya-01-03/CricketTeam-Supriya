@@ -28,6 +28,12 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
         self.getPlayers()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
     
     //MARK: - Server Call
     
@@ -77,6 +83,15 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
         else {
             let loadingCell = collectionView.dequeueReusableCell(withReuseIdentifier: "loadingCell", for: indexPath) as! CTLoadingCollectionViewCell
             return loadingCell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row < dataArray.count {
+            let selectedData = dataArray[indexPath.item]
+            let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "playerDetailView") as! CTPlayerDetailViewController
+            detailVC.detailJSON = selectedData
+            self.navigationController?.pushViewController(detailVC, animated: true)
         }
     }
 

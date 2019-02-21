@@ -35,9 +35,25 @@ class CTPlayerListCollectionViewCell: UICollectionViewCell {
     func setData(detailData: JSON) {
         self.nameLabel.text = detailData["name"].stringValue.capitalized
         
-        self.displayImageView.sd_setImage(with: getImageURL(fromURLString: detailData["picture"].stringValue), placeholderImage: nil, options: [.highPriority, .retryFailed]) { (img, err, cache, url) in
+        self.displayImageView.sd_setImage(with: getImageURL(fromURLString: detailData["picture"].stringValue), placeholderImage: getPlaceholderImage(), options: [.highPriority, .retryFailed]) { (img, err, cache, url) in
             self.displayImageView.image = img
         }
+    }
+    
+}
+
+class CTPlayerDetailTableviewCell: UITableViewCell {
+    
+    @IBOutlet weak var detailLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    func setData(paramName: String, paramValue: String) {
+        let displayText = getBoldString(string: "\(paramName) : ", size: 14)
+        displayText.append(getRegularString(string: paramValue, size: 14))
+        self.detailLabel.attributedText = displayText
     }
     
 }
