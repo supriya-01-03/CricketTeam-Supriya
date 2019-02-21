@@ -1,0 +1,6 @@
+module Pods_CricketTeamSupriya {
+  umbrella header "Pods-CricketTeamSupriya-umbrella.h"
+
+  export *
+  module * { export * }
+}

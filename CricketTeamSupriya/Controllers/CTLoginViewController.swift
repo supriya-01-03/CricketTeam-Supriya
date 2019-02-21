@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  CTLoginViewController.swift
 //  CricketTeamSupriya
 //
 //  Created by Supriya Malgaonkar on 21/02/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class CTLoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var emailTF: UITextField!
@@ -22,8 +22,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         self.setupView()
-        
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,5 +51,13 @@ class LoginViewController: UIViewController {
         
     }
     
-
+    
+    //MARK: - TextField Delegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
 }

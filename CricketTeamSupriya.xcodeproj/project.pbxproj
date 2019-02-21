@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0DFBE46C4E8F398CCFD247 /* libPods-CricketTeamSupriya.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A634F7E8694361D2D0A6F4E /* libPods-CricketTeamSupriya.a */; };
 		942B3B79221EB32F00039BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3B78221EB32F00039BAF /* AppDelegate.swift */; };
 		942B3B7E221EB32F00039BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942B3B7C221EB32F00039BAF /* Main.storyboard */; };
 		942B3B80221EB33000039BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942B3B7F221EB33000039BAF /* Assets.xcassets */; };
 		942B3B83221EB33000039BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942B3B81221EB33000039BAF /* LaunchScreen.storyboard */; };
 		942B3B8E221EB33000039BAF /* CricketTeamSupriyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3B8D221EB33000039BAF /* CricketTeamSupriyaTests.swift */; };
 		942B3B99221EB33000039BAF /* CricketTeamSupriyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3B98221EB33000039BAF /* CricketTeamSupriyaUITests.swift */; };
-		942B3BAA221EB45B00039BAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BA9221EB45B00039BAF /* LoginViewController.swift */; };
 		942B3BAE221EBD8900039BAF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BAD221EBD8900039BAF /* Utils.swift */; };
+		942B3BB0221ECA2100039BAF /* CTPlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BAF221ECA2100039BAF /* CTPlayersListViewController.swift */; };
+		942B3BB2221ECAEF00039BAF /* CTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BB1221ECAEF00039BAF /* CTLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A634F7E8694361D2D0A6F4E /* libPods-CricketTeamSupriya.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CricketTeamSupriya.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE511BDAAE0E0A7FE2DFC68 /* Pods-CricketTeamSupriya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketTeamSupriya.release.xcconfig"; path = "Target Support Files/Pods-CricketTeamSupriya/Pods-CricketTeamSupriya.release.xcconfig"; sourceTree = "<group>"; };
 		942B3B75221EB32F00039BAF /* CricketTeamSupriya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricketTeamSupriya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942B3B78221EB32F00039BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		942B3B7D221EB32F00039BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,8 +51,10 @@
 		942B3B94221EB33000039BAF /* CricketTeamSupriyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CricketTeamSupriyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		942B3B98221EB33000039BAF /* CricketTeamSupriyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketTeamSupriyaUITests.swift; sourceTree = "<group>"; };
 		942B3B9A221EB33000039BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		942B3BA9221EB45B00039BAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		942B3BAD221EBD8900039BAF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		942B3BAF221ECA2100039BAF /* CTPlayersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPlayersListViewController.swift; sourceTree = "<group>"; };
+		942B3BB1221ECAEF00039BAF /* CTLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLoginViewController.swift; sourceTree = "<group>"; };
+		F027DEAEA84BA2BADFC0BD45 /* Pods-CricketTeamSupriya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketTeamSupriya.debug.xcconfig"; path = "Target Support Files/Pods-CricketTeamSupriya/Pods-CricketTeamSupriya.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0DFBE46C4E8F398CCFD247 /* libPods-CricketTeamSupriya.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A92A8099E0FE2CD0745BB9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A634F7E8694361D2D0A6F4E /* libPods-CricketTeamSupriya.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		942B3B6C221EB32E00039BAF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,8 @@
 				942B3B8C221EB33000039BAF /* CricketTeamSupriyaTests */,
 				942B3B97221EB33000039BAF /* CricketTeamSupriyaUITests */,
 				942B3B76221EB32F00039BAF /* Products */,
+				F8E28C5C76E46AFF17EEAD8C /* Pods */,
+				4A92A8099E0FE2CD0745BB9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,7 +150,8 @@
 		942B3BA6221EB3F900039BAF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				942B3BA9221EB45B00039BAF /* LoginViewController.swift */,
+				942B3BAF221ECA2100039BAF /* CTPlayersListViewController.swift */,
+				942B3BB1221ECAEF00039BAF /* CTLoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +186,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F8E28C5C76E46AFF17EEAD8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F027DEAEA84BA2BADFC0BD45 /* Pods-CricketTeamSupriya.debug.xcconfig */,
+				4AE511BDAAE0E0A7FE2DFC68 /* Pods-CricketTeamSupriya.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 942B3B9D221EB33000039BAF /* Build configuration list for PBXNativeTarget "CricketTeamSupriya" */;
 			buildPhases = (
+				030E351A95A1047805A71896 /* [CP] Check Pods Manifest.lock */,
 				942B3B71221EB32E00039BAF /* Sources */,
 				942B3B72221EB32E00039BAF /* Frameworks */,
 				942B3B73221EB32E00039BAF /* Resources */,
@@ -230,6 +258,7 @@
 		942B3B6D221EB32E00039BAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CT;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Supriya Malgaonkar";
@@ -294,13 +323,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030E351A95A1047805A71896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CricketTeamSupriya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		942B3B71221EB32E00039BAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				942B3BAA221EB45B00039BAF /* LoginViewController.swift in Sources */,
+				942B3BB2221ECAEF00039BAF /* CTLoginViewController.swift in Sources */,
 				942B3B79221EB32F00039BAF /* AppDelegate.swift in Sources */,
+				942B3BB0221ECA2100039BAF /* CTPlayersListViewController.swift in Sources */,
 				942B3BAE221EBD8900039BAF /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,9 +529,11 @@
 		};
 		942B3B9E221EB33000039BAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F027DEAEA84BA2BADFC0BD45 /* Pods-CricketTeamSupriya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2365TQN7U;
 				INFOPLIST_FILE = CricketTeamSupriya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,9 +548,11 @@
 		};
 		942B3B9F221EB33000039BAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE511BDAAE0E0A7FE2DFC68 /* Pods-CricketTeamSupriya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2365TQN7U;
 				INFOPLIST_FILE = CricketTeamSupriya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
