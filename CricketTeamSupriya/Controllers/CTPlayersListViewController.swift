@@ -54,14 +54,23 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
         }
     }
     
+    private func getFilters() {
+        CTRequestManager.getSharedManager().getFilters { (response) in
+            print("\n response : \(response)")
+            print("\n")
+        }
+    }
+    
     
     //MARK: - Update DB
     
     private func updateDatabase(withValues: [JSON]) {
         Player.savePlayers(details: withValues) { (isComplete) in
             Player.getAllPlayers(completion: { (listPlayers) in
-                self.dataArray = listPlayers
-                self.listCollectionViewView.reloadData()
+                DispatchQueue.main.async(execute: {
+                    self.dataArray = listPlayers
+                    self.listCollectionViewView.reloadData()
+                })
             })
         }
     }

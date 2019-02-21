@@ -66,7 +66,7 @@ class CTLoginViewController: UIViewController, UITextFieldDelegate {
                 
                 CustomLoadingView.customLoaderInstance.showLoader(onView: sender, style: .white)
                 
-                CTRequestManager.getSharedManager().loginUser(emailValue: "maheshwari@techcetra.com", passwordValue: passwordVal!) { (response) in
+                CTRequestManager.getSharedManager().loginUser(emailValue: emailVal!, passwordValue: passwordVal!) { (response) in
                     print("\n Response : \(response)")
                     print("\n")
                     

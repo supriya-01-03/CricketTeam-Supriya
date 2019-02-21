@@ -16,20 +16,41 @@ extension Player {
         let privateContext = PersistenceServeice.privateContext
         privateContext.perform {
             for detail in details {
-                let newPlayer = Player(context: privateContext)
-                newPlayer.age = detail["age"].stringValue
-                newPlayer.playerId = detail["player_id"].stringValue
-                newPlayer.name = detail["name"].stringValue
-                newPlayer.team = detail["team"].stringValue
-                newPlayer.teamStatus = detail["team_status"].stringValue
-                newPlayer.building = detail["building"].stringValue
-                newPlayer.picture = detail["picture"].stringValue
-                newPlayer.categoryName = detail["category_name"].stringValue
-                newPlayer.batsman = detail["batsman"].stringValue
-                newPlayer.bowler = detail["bowler"].stringValue
-                newPlayer.basePrice = detail["base_price"].stringValue
-                newPlayer.points = detail["points"].stringValue
-                newPlayer.pointsType = detail["points_type"].stringValue
+                
+                let fetchPlayerRequest: NSFetchRequest<Player> = Player.fetchRequest()
+                fetchPlayerRequest.predicate = NSPredicate(format: "playerId = %@", detail["player_id"].stringValue)
+                fetchPlayerRequest.returnsObjectsAsFaults = false
+                
+                var playerObject: Player!
+                
+                let mainContext = PersistenceServeice.context
+                mainContext.performAndWait({
+                    do {
+                        if let existingPlayer = try mainContext.fetch(fetchPlayerRequest).first {
+                            playerObject = existingPlayer
+                        }
+                        else {
+                            playerObject = Player(context: privateContext)
+                            playerObject.playerId = detail["player_id"].stringValue
+                        }
+                        
+                        playerObject.age = detail["age"].stringValue
+                        playerObject.playerId = detail["player_id"].stringValue
+                        playerObject.name = detail["name"].stringValue
+                        playerObject.team = detail["team"].stringValue
+                        playerObject.teamStatus = detail["team_status"].stringValue
+                        playerObject.building = detail["building"].stringValue
+                        playerObject.picture = detail["picture"].stringValue
+                        playerObject.categoryName = detail["category_name"].stringValue
+                        playerObject.batsman = detail["batsman"].stringValue
+                        playerObject.bowler = detail["bowler"].stringValue
+                        playerObject.basePrice = detail["base_price"].stringValue
+                        playerObject.points = detail["points"].stringValue
+                        playerObject.pointsType = detail["points_type"].stringValue
+                    }
+                    catch let _ {
+                    }
+                })
             }
             
             do {
@@ -56,6 +77,7 @@ extension Player {
     static func getAllPlayers(completion: @escaping(([JSON]) -> Void)) {
         var requiredObjects: [JSON] = []
         let fetchPlayerRequests: NSFetchRequest<Player> = Player.fetchRequest()
+        fetchPlayerRequests.sortDescriptors = [NSSortDescriptor(key: "playerId", ascending: true)]
         fetchPlayerRequests.returnsObjectsAsFaults = false
         
         let privateContext = PersistenceServeice.privateContext
