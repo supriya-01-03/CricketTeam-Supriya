@@ -26,6 +26,7 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
         
         self.title = "Select player for details"
         self.getPlayers()
+        getFilters()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

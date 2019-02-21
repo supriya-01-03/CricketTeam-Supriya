@@ -42,7 +42,7 @@ class CTRequestManager: NSObject {
     }
     
     func getFilters(completion: @escaping ((JSON) -> Void)) {
-        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "players/filters", allParameters: nil) { (serverResponse, _) in
+        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "players/filters", allParameters: nil, methodType: .get, isCachingRequired: false) { (serverResponse, _) in
             completion(serverResponse)
         }
     }
