@@ -17,6 +17,30 @@
 		942B3BAE221EBD8900039BAF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BAD221EBD8900039BAF /* Utils.swift */; };
 		942B3BB0221ECA2100039BAF /* CTPlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BAF221ECA2100039BAF /* CTPlayersListViewController.swift */; };
 		942B3BB2221ECAEF00039BAF /* CTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BB1221ECAEF00039BAF /* CTLoginViewController.swift */; };
+		942B3BB6221EDA0900039BAF /* CTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B3BB5221EDA0900039BAF /* CTNetworkManager.swift */; };
+		94F98C8E221EE06D00B0FEFC /* CTRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C8D221EE06D00B0FEFC /* CTRequestManager.swift */; };
+		94F98C90221EE98600B0FEFC /* CTCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C8F221EE98600B0FEFC /* CTCustomCells.swift */; };
+		94F98CBD221EECD100B0FEFC /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C95221EECCF00B0FEFC /* SDWebImagePrefetcher.m */; };
+		94F98CBE221EECD100B0FEFC /* DACircularProgress in Resources */ = {isa = PBXBuildFile; fileRef = 94F98C97221EECCF00B0FEFC /* DACircularProgress */; };
+		94F98CBF221EECD100B0FEFC /* FLAnimatedImage in Resources */ = {isa = PBXBuildFile; fileRef = 94F98C98221EECCF00B0FEFC /* FLAnimatedImage */; };
+		94F98CC0221EECD100B0FEFC /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C9E221EECCF00B0FEFC /* UIImage+WebP.m */; };
+		94F98CC1221EECD100B0FEFC /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA2221EECD000B0FEFC /* UIImageView+WebCache.m */; };
+		94F98CC2221EECD100B0FEFC /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA7221EECD000B0FEFC /* UIView+WebCache.m */; };
+		94F98CC3221EECD100B0FEFC /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA8221EECD000B0FEFC /* SDWebImageCompat.m */; };
+		94F98CC4221EECD100B0FEFC /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA9221EECD000B0FEFC /* UIImage+MultiFormat.m */; };
+		94F98CC5221EECD100B0FEFC /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CAA221EECD000B0FEFC /* SDWebImageManager.m */; };
+		94F98CC6221EECD100B0FEFC /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CAB221EECD000B0FEFC /* SDWebImageDecoder.m */; };
+		94F98CC7221EECD100B0FEFC /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CAC221EECD000B0FEFC /* NSImage+WebCache.m */; };
+		94F98CC8221EECD100B0FEFC /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CAE221EECD000B0FEFC /* SDWebImageDownloaderOperation.m */; };
+		94F98CC9221EECD100B0FEFC /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB0221EECD100B0FEFC /* SDImageCache.m */; };
+		94F98CCA221EECD100B0FEFC /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB1221EECD100B0FEFC /* NSData+ImageContentType.m */; };
+		94F98CCB221EECD100B0FEFC /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB2221EECD100B0FEFC /* SDWebImageDownloader.m */; };
+		94F98CCC221EECD100B0FEFC /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB4221EECD100B0FEFC /* UIButton+WebCache.m */; };
+		94F98CCD221EECD100B0FEFC /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB6221EECD100B0FEFC /* UIImage+GIF.m */; };
+		94F98CCE221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB7221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m */; };
+		94F98CCF221EECD100B0FEFC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB8221EECD100B0FEFC /* UIView+WebCacheOperation.m */; };
+		94F98CD0221EECD100B0FEFC /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB9221EECD100B0FEFC /* SDImageCacheConfig.m */; };
+		94F98CD1221EECD100B0FEFC /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CBA221EECD100B0FEFC /* MKAnnotationView+WebCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +78,52 @@
 		942B3BAD221EBD8900039BAF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		942B3BAF221ECA2100039BAF /* CTPlayersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPlayersListViewController.swift; sourceTree = "<group>"; };
 		942B3BB1221ECAEF00039BAF /* CTLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTLoginViewController.swift; sourceTree = "<group>"; };
+		942B3BB5221EDA0900039BAF /* CTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTNetworkManager.swift; sourceTree = "<group>"; };
+		94F98C8D221EE06D00B0FEFC /* CTRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTRequestManager.swift; sourceTree = "<group>"; };
+		94F98C8F221EE98600B0FEFC /* CTCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTCustomCells.swift; sourceTree = "<group>"; };
+		94F98C93221EECCE00B0FEFC /* CricketTeamSupriya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricketTeamSupriya-Bridging-Header.h"; sourceTree = "<group>"; };
+		94F98C94221EECCE00B0FEFC /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = SOURCE_ROOT; };
+		94F98C95221EECCF00B0FEFC /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImagePrefetcher.m; sourceTree = SOURCE_ROOT; };
+		94F98C96221EECCF00B0FEFC /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDecoder.h; sourceTree = SOURCE_ROOT; };
+		94F98C97221EECCF00B0FEFC /* DACircularProgress */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DACircularProgress; path = CricketTeamSupriya/Utils/SDWebImage/DACircularProgress; sourceTree = SOURCE_ROOT; };
+		94F98C98221EECCF00B0FEFC /* FLAnimatedImage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FLAnimatedImage; path = CricketTeamSupriya/Utils/SDWebImage/FLAnimatedImage; sourceTree = SOURCE_ROOT; };
+		94F98C99221EECCF00B0FEFC /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDownloader.h; sourceTree = SOURCE_ROOT; };
+		94F98C9A221EECCF00B0FEFC /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageOperation.h; sourceTree = SOURCE_ROOT; };
+		94F98C9B221EECCF00B0FEFC /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageManager.h; sourceTree = SOURCE_ROOT; };
+		94F98C9C221EECCF00B0FEFC /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+WebP.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+WebP.h"; sourceTree = SOURCE_ROOT; };
+		94F98C9D221EECCF00B0FEFC /* NSImage+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/NSImage+WebCache.h"; sourceTree = SOURCE_ROOT; };
+		94F98C9E221EECCF00B0FEFC /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WebP.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+WebP.m"; sourceTree = SOURCE_ROOT; };
+		94F98C9F221EECCF00B0FEFC /* UIView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCache.h"; sourceTree = SOURCE_ROOT; };
+		94F98CA0221EECCF00B0FEFC /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = CricketTeamSupriya/Utils/SDWebImage/SDImageCache.h; sourceTree = SOURCE_ROOT; };
+		94F98CA1221EECD000B0FEFC /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "CricketTeamSupriya/Utils/SDWebImage/NSData+ImageContentType.h"; sourceTree = SOURCE_ROOT; };
+		94F98CA2221EECD000B0FEFC /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImageView+WebCache.m"; sourceTree = SOURCE_ROOT; };
+		94F98CA3221EECD000B0FEFC /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageCompat.h; sourceTree = SOURCE_ROOT; };
+		94F98CA4221EECD000B0FEFC /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCacheOperation.h"; sourceTree = SOURCE_ROOT; };
+		94F98CA5221EECD000B0FEFC /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImagePrefetcher.h; sourceTree = SOURCE_ROOT; };
+		94F98CA6221EECD000B0FEFC /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+GIF.h"; sourceTree = SOURCE_ROOT; };
+		94F98CA7221EECD000B0FEFC /* UIView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCache.m"; sourceTree = SOURCE_ROOT; };
+		94F98CA8221EECD000B0FEFC /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageCompat.m; sourceTree = SOURCE_ROOT; };
+		94F98CA9221EECD000B0FEFC /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+MultiFormat.m"; sourceTree = SOURCE_ROOT; };
+		94F98CAA221EECD000B0FEFC /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageManager.m; sourceTree = SOURCE_ROOT; };
+		94F98CAB221EECD000B0FEFC /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDecoder.m; sourceTree = SOURCE_ROOT; };
+		94F98CAC221EECD000B0FEFC /* NSImage+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/NSImage+WebCache.m"; sourceTree = SOURCE_ROOT; };
+		94F98CAD221EECD000B0FEFC /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+MultiFormat.h"; sourceTree = SOURCE_ROOT; };
+		94F98CAE221EECD000B0FEFC /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = SOURCE_ROOT; };
+		94F98CAF221EECD000B0FEFC /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImageView+WebCache.h"; sourceTree = SOURCE_ROOT; };
+		94F98CB0221EECD100B0FEFC /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = CricketTeamSupriya/Utils/SDWebImage/SDImageCache.m; sourceTree = SOURCE_ROOT; };
+		94F98CB1221EECD100B0FEFC /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "CricketTeamSupriya/Utils/SDWebImage/NSData+ImageContentType.m"; sourceTree = SOURCE_ROOT; };
+		94F98CB2221EECD100B0FEFC /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDownloader.m; sourceTree = SOURCE_ROOT; };
+		94F98CB3221EECD100B0FEFC /* SDImageCacheConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = CricketTeamSupriya/Utils/SDWebImage/SDImageCacheConfig.h; sourceTree = SOURCE_ROOT; };
+		94F98CB4221EECD100B0FEFC /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIButton+WebCache.m"; sourceTree = SOURCE_ROOT; };
+		94F98CB5221EECD100B0FEFC /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = SOURCE_ROOT; };
+		94F98CB6221EECD100B0FEFC /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+GIF.m"; sourceTree = SOURCE_ROOT; };
+		94F98CB7221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = SOURCE_ROOT; };
+		94F98CB8221EECD100B0FEFC /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCacheOperation.m"; sourceTree = SOURCE_ROOT; };
+		94F98CB9221EECD100B0FEFC /* SDImageCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = CricketTeamSupriya/Utils/SDWebImage/SDImageCacheConfig.m; sourceTree = SOURCE_ROOT; };
+		94F98CBA221EECD100B0FEFC /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/MKAnnotationView+WebCache.m"; sourceTree = SOURCE_ROOT; };
+		94F98CBB221EECD100B0FEFC /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIButton+WebCache.h"; sourceTree = SOURCE_ROOT; };
+		94F98CBC221EECD100B0FEFC /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/MKAnnotationView+WebCache.h"; sourceTree = SOURCE_ROOT; };
+		94F98CD2221EED0900B0FEFC /* CricketTeamSupriya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricketTeamSupriya-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F027DEAEA84BA2BADFC0BD45 /* Pods-CricketTeamSupriya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketTeamSupriya.debug.xcconfig"; path = "Target Support Files/Pods-CricketTeamSupriya/Pods-CricketTeamSupriya.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +192,7 @@
 				942B3BA8221EB41700039BAF /* View */,
 				942B3BA6221EB3F900039BAF /* Controllers */,
 				942B3B78221EB32F00039BAF /* AppDelegate.swift */,
+				94F98CD2221EED0900B0FEFC /* CricketTeamSupriya-Bridging-Header.h */,
 				942B3B7F221EB33000039BAF /* Assets.xcassets */,
 				942B3B81221EB33000039BAF /* LaunchScreen.storyboard */,
 				942B3B84221EB33000039BAF /* Info.plist */,
@@ -150,8 +221,8 @@
 		942B3BA6221EB3F900039BAF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				942B3BAF221ECA2100039BAF /* CTPlayersListViewController.swift */,
 				942B3BB1221ECAEF00039BAF /* CTLoginViewController.swift */,
+				942B3BAF221ECA2100039BAF /* CTPlayersListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				942B3B7C221EB32F00039BAF /* Main.storyboard */,
+				94F98C8F221EE98600B0FEFC /* CTCustomCells.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +246,8 @@
 		942B3BAB221EB4A500039BAF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				94F98C8D221EE06D00B0FEFC /* CTRequestManager.swift */,
+				942B3BB5221EDA0900039BAF /* CTNetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -181,9 +255,60 @@
 		942B3BAC221EBD6A00039BAF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				94F98C91221EEC4800B0FEFC /* SDWebImage */,
 				942B3BAD221EBD8900039BAF /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		94F98C91221EEC4800B0FEFC /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				94F98C97221EECCF00B0FEFC /* DACircularProgress */,
+				94F98C98221EECCF00B0FEFC /* FLAnimatedImage */,
+				94F98CBC221EECD100B0FEFC /* MKAnnotationView+WebCache.h */,
+				94F98CBA221EECD100B0FEFC /* MKAnnotationView+WebCache.m */,
+				94F98CA1221EECD000B0FEFC /* NSData+ImageContentType.h */,
+				94F98CB1221EECD100B0FEFC /* NSData+ImageContentType.m */,
+				94F98C9D221EECCF00B0FEFC /* NSImage+WebCache.h */,
+				94F98CAC221EECD000B0FEFC /* NSImage+WebCache.m */,
+				94F98CA0221EECCF00B0FEFC /* SDImageCache.h */,
+				94F98CB0221EECD100B0FEFC /* SDImageCache.m */,
+				94F98CB3221EECD100B0FEFC /* SDImageCacheConfig.h */,
+				94F98CB9221EECD100B0FEFC /* SDImageCacheConfig.m */,
+				94F98CA3221EECD000B0FEFC /* SDWebImageCompat.h */,
+				94F98CA8221EECD000B0FEFC /* SDWebImageCompat.m */,
+				94F98C96221EECCF00B0FEFC /* SDWebImageDecoder.h */,
+				94F98CAB221EECD000B0FEFC /* SDWebImageDecoder.m */,
+				94F98C99221EECCF00B0FEFC /* SDWebImageDownloader.h */,
+				94F98CB2221EECD100B0FEFC /* SDWebImageDownloader.m */,
+				94F98C94221EECCE00B0FEFC /* SDWebImageDownloaderOperation.h */,
+				94F98CAE221EECD000B0FEFC /* SDWebImageDownloaderOperation.m */,
+				94F98C9B221EECCF00B0FEFC /* SDWebImageManager.h */,
+				94F98CAA221EECD000B0FEFC /* SDWebImageManager.m */,
+				94F98C9A221EECCF00B0FEFC /* SDWebImageOperation.h */,
+				94F98CA5221EECD000B0FEFC /* SDWebImagePrefetcher.h */,
+				94F98C95221EECCF00B0FEFC /* SDWebImagePrefetcher.m */,
+				94F98CBB221EECD100B0FEFC /* UIButton+WebCache.h */,
+				94F98CB4221EECD100B0FEFC /* UIButton+WebCache.m */,
+				94F98CA6221EECD000B0FEFC /* UIImage+GIF.h */,
+				94F98CB6221EECD100B0FEFC /* UIImage+GIF.m */,
+				94F98CAD221EECD000B0FEFC /* UIImage+MultiFormat.h */,
+				94F98CA9221EECD000B0FEFC /* UIImage+MultiFormat.m */,
+				94F98C9C221EECCF00B0FEFC /* UIImage+WebP.h */,
+				94F98C9E221EECCF00B0FEFC /* UIImage+WebP.m */,
+				94F98CB5221EECD100B0FEFC /* UIImageView+HighlightedWebCache.h */,
+				94F98CB7221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m */,
+				94F98CAF221EECD000B0FEFC /* UIImageView+WebCache.h */,
+				94F98CA2221EECD000B0FEFC /* UIImageView+WebCache.m */,
+				94F98C9F221EECCF00B0FEFC /* UIView+WebCache.h */,
+				94F98CA7221EECD000B0FEFC /* UIView+WebCache.m */,
+				94F98CA4221EECD000B0FEFC /* UIView+WebCacheOperation.h */,
+				94F98CB8221EECD100B0FEFC /* UIView+WebCacheOperation.m */,
+				94F98C93221EECCE00B0FEFC /* CricketTeamSupriya-Bridging-Header.h */,
+			);
+			name = SDWebImage;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F8E28C5C76E46AFF17EEAD8C /* Pods */ = {
@@ -265,6 +390,7 @@
 				TargetAttributes = {
 					942B3B74221EB32E00039BAF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					942B3B88221EB33000039BAF = {
 						CreatedOnToolsVersion = 10.1;
@@ -302,6 +428,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				942B3B83221EB33000039BAF /* LaunchScreen.storyboard in Resources */,
+				94F98CBE221EECD100B0FEFC /* DACircularProgress in Resources */,
+				94F98CBF221EECD100B0FEFC /* FLAnimatedImage in Resources */,
 				942B3B80221EB33000039BAF /* Assets.xcassets in Resources */,
 				942B3B7E221EB32F00039BAF /* Main.storyboard in Resources */,
 			);
@@ -353,10 +481,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F98CCE221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m in Sources */,
+				94F98CCD221EECD100B0FEFC /* UIImage+GIF.m in Sources */,
+				94F98CC4221EECD100B0FEFC /* UIImage+MultiFormat.m in Sources */,
+				94F98CC9221EECD100B0FEFC /* SDImageCache.m in Sources */,
+				94F98CCF221EECD100B0FEFC /* UIView+WebCacheOperation.m in Sources */,
+				94F98CD0221EECD100B0FEFC /* SDImageCacheConfig.m in Sources */,
+				94F98CC5221EECD100B0FEFC /* SDWebImageManager.m in Sources */,
+				94F98CC2221EECD100B0FEFC /* UIView+WebCache.m in Sources */,
+				94F98CCB221EECD100B0FEFC /* SDWebImageDownloader.m in Sources */,
+				94F98CC3221EECD100B0FEFC /* SDWebImageCompat.m in Sources */,
+				94F98C8E221EE06D00B0FEFC /* CTRequestManager.swift in Sources */,
+				94F98CCC221EECD100B0FEFC /* UIButton+WebCache.m in Sources */,
+				94F98CC0221EECD100B0FEFC /* UIImage+WebP.m in Sources */,
+				94F98CC1221EECD100B0FEFC /* UIImageView+WebCache.m in Sources */,
+				94F98CC6221EECD100B0FEFC /* SDWebImageDecoder.m in Sources */,
+				94F98CC8221EECD100B0FEFC /* SDWebImageDownloaderOperation.m in Sources */,
+				94F98CBD221EECD100B0FEFC /* SDWebImagePrefetcher.m in Sources */,
 				942B3BB2221ECAEF00039BAF /* CTLoginViewController.swift in Sources */,
 				942B3B79221EB32F00039BAF /* AppDelegate.swift in Sources */,
+				94F98CCA221EECD100B0FEFC /* NSData+ImageContentType.m in Sources */,
+				94F98C90221EE98600B0FEFC /* CTCustomCells.swift in Sources */,
 				942B3BB0221ECA2100039BAF /* CTPlayersListViewController.swift in Sources */,
 				942B3BAE221EBD8900039BAF /* Utils.swift in Sources */,
+				94F98CD1221EECD100B0FEFC /* MKAnnotationView+WebCache.m in Sources */,
+				94F98CC7221EECD100B0FEFC /* NSImage+WebCache.m in Sources */,
+				942B3BB6221EDA0900039BAF /* CTNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +682,7 @@
 			baseConfigurationReference = F027DEAEA84BA2BADFC0BD45 /* Pods-CricketTeamSupriya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2365TQN7U;
 				INFOPLIST_FILE = CricketTeamSupriya/Info.plist;
@@ -539,8 +690,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.spm.CricketTeamSupriya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CricketTeamSupriya/Utils/New Group/CricketTeamSupriya-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -551,6 +705,7 @@
 			baseConfigurationReference = 4AE511BDAAE0E0A7FE2DFC68 /* Pods-CricketTeamSupriya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2365TQN7U;
 				INFOPLIST_FILE = CricketTeamSupriya/Info.plist;
@@ -560,6 +715,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spm.CricketTeamSupriya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CricketTeamSupriya/Utils/New Group/CricketTeamSupriya-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -15,6 +15,7 @@ class CTLoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var passwordShowHideButton: UIButton!
     
     //MARK: - Lifecycle
     
@@ -40,8 +41,14 @@ class CTLoginViewController: UIViewController, UITextFieldDelegate {
     //MARK: - UI Helpers
     
     private func setupView() {
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.containerView.layer.cornerRadius = DEFAULT_CORNER_RADIUS
         self.loginButton.layer.cornerRadius = DEFAULT_CORNER_RADIUS
+        
+        self.passwordShowHideButton.setImage(UIImage(named: "showPswd"), for: .selected)
+        self.passwordShowHideButton.setImage(UIImage(named: "hidePswd"), for: .normal)
+        self.passwordShowHideButton.isSelected = self.passwordTF.isSecureTextEntry
     }
     
     
@@ -49,6 +56,66 @@ class CTLoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loginButtonClicked(_ sender: UIButton) {
         
+        sender.isUserInteractionEnabled = false
+        
+        let emailVal = self.emailTF.text
+        let passwordVal = self.passwordTF.text
+        
+        if emailVal != nil && emailVal! != "" {
+            if passwordVal != nil && passwordVal! != "" {
+                
+                CustomLoadingView.customLoaderInstance.showLoader(onView: sender, style: .white)
+                
+                CTRequestManager.getSharedManager().loginUser(emailValue: emailVal!, passwordValue: passwordVal!) { (response) in
+                    print("\n Response : \(response)")
+                    print("\n")
+                    
+                    sender.isUserInteractionEnabled = true
+                    
+                    if response["success"].boolValue {
+                        CustomLoadingView.customLoaderInstance.hideLoader()
+                        
+                        setUserToken(tokenVal: response["data"]["token"].stringValue)
+                        
+                        showAlert(titleVal: "", messageVal: response["msg"].stringValue, withNavController: self.navigationController, completion: { (_) in
+                            
+                            let playerListVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "playerListView") as! CTPlayersListViewController
+                            self.navigationController?.pushViewController(playerListVC, animated: true)
+                        })
+                    }
+                    else {
+                        
+                        CustomLoadingView.customLoaderInstance.hideLoader()
+                        
+                        var msg = "Invalid email or password"
+                        if let firstError = response["errors"].arrayValue.first {
+                            msg = firstError["msg"].stringValue
+                        }
+                        
+                        self.emailTF.resignFirstResponder()
+                        self.passwordTF.resignFirstResponder()
+                        
+                        showAlert(titleVal: "Error", messageVal: msg, withNavController: self.navigationController, completion: { (_) in
+                        })
+                        
+                        self.emailTF.text = ""
+                        self.passwordTF.text = ""
+                        
+                    }
+                }
+            }
+            else {
+                showErrorAlert(titleVal: "Error", messageVal: "Please enter password.", withNavController: self.navigationController)
+            }
+        }
+        else {
+            showErrorAlert(titleVal: "Error", messageVal: "Please enter valid email.", withNavController: self.navigationController)
+        }
+    }
+    
+    @IBAction func passwordToggleButtonClicked(_ sender: UIButton) {
+        self.passwordTF.isSecureTextEntry = !self.passwordShowHideButton.isSelected
+        self.passwordShowHideButton.isSelected = self.passwordTF.isSecureTextEntry
     }
     
     
