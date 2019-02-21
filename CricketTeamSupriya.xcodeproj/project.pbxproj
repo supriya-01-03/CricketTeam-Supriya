@@ -43,6 +43,11 @@
 		94F98CE5221F0D9000B0FEFC /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CE2221F0D8F00B0FEFC /* DACircularProgressView.m */; };
 		94F98CE6221F0D9000B0FEFC /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CE3221F0D8F00B0FEFC /* DALabeledCircularProgressView.m */; };
 		94F98CE8221F201700B0FEFC /* CTPlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CE7221F201700B0FEFC /* CTPlayerDetailViewController.swift */; };
+		94F98CEB221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CE9221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodeld */; };
+		94F98CEE221F2B4400B0FEFC /* Player+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CEC221F2B4400B0FEFC /* Player+CoreDataProperties copy.swift */; };
+		94F98CEF221F2B4400B0FEFC /* Player+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CED221F2B4400B0FEFC /* Player+CoreDataClass copy.swift */; };
+		94F98CF1221F2BB200B0FEFC /* PersistenceServeice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CF0221F2BB200B0FEFC /* PersistenceServeice.swift */; };
+		94F98CF3221F2CB800B0FEFC /* Player_Extenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CF2221F2CB800B0FEFC /* Player_Extenion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +134,11 @@
 		94F98CE3221F0D8F00B0FEFC /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DALabeledCircularProgressView.m; path = CricketTeamSupriya/Utils/SDWebImage/DALabeledCircularProgressView.m; sourceTree = SOURCE_ROOT; };
 		94F98CE4221F0D9000B0FEFC /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DALabeledCircularProgressView.h; path = CricketTeamSupriya/Utils/SDWebImage/DALabeledCircularProgressView.h; sourceTree = SOURCE_ROOT; };
 		94F98CE7221F201700B0FEFC /* CTPlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTPlayerDetailViewController.swift; sourceTree = "<group>"; };
+		94F98CEA221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CricketTeamSupriya.xcdatamodel; sourceTree = "<group>"; };
+		94F98CEC221F2B4400B0FEFC /* Player+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
+		94F98CED221F2B4400B0FEFC /* Player+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass copy.swift"; sourceTree = "<group>"; };
+		94F98CF0221F2BB200B0FEFC /* PersistenceServeice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceServeice.swift; sourceTree = "<group>"; };
+		94F98CF2221F2CB800B0FEFC /* Player_Extenion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_Extenion.swift; sourceTree = "<group>"; };
 		F027DEAEA84BA2BADFC0BD45 /* Pods-CricketTeamSupriya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketTeamSupriya.debug.xcconfig"; path = "Target Support Files/Pods-CricketTeamSupriya/Pods-CricketTeamSupriya.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +246,11 @@
 		942B3BA7221EB40400039BAF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				94F98CE9221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodeld */,
+				94F98CF0221F2BB200B0FEFC /* PersistenceServeice.swift */,
+				94F98CED221F2B4400B0FEFC /* Player+CoreDataClass copy.swift */,
+				94F98CEC221F2B4400B0FEFC /* Player+CoreDataProperties copy.swift */,
+				94F98CF2221F2CB800B0FEFC /* Player_Extenion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -497,19 +512,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				94F98CCE221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m in Sources */,
+				94F98CF1221F2BB200B0FEFC /* PersistenceServeice.swift in Sources */,
 				94F98CCD221EECD100B0FEFC /* UIImage+GIF.m in Sources */,
 				94F98CE0221F0D3100B0FEFC /* UIView+WebCache.m in Sources */,
 				94F98CC4221EECD100B0FEFC /* UIImage+MultiFormat.m in Sources */,
 				94F98CE5221F0D9000B0FEFC /* DACircularProgressView.m in Sources */,
+				94F98CF3221F2CB800B0FEFC /* Player_Extenion.swift in Sources */,
 				94F98CC9221EECD100B0FEFC /* SDImageCache.m in Sources */,
+				94F98CEF221F2B4400B0FEFC /* Player+CoreDataClass copy.swift in Sources */,
 				94F98CD0221EECD100B0FEFC /* SDImageCacheConfig.m in Sources */,
 				94F98CC5221EECD100B0FEFC /* SDWebImageManager.m in Sources */,
 				94F98CCB221EECD100B0FEFC /* SDWebImageDownloader.m in Sources */,
 				94F98CC3221EECD100B0FEFC /* SDWebImageCompat.m in Sources */,
 				94F98C8E221EE06D00B0FEFC /* CTRequestManager.swift in Sources */,
+				94F98CEE221F2B4400B0FEFC /* Player+CoreDataProperties copy.swift in Sources */,
 				94F98CCC221EECD100B0FEFC /* UIButton+WebCache.m in Sources */,
 				94F98CC0221EECD100B0FEFC /* UIImage+WebP.m in Sources */,
 				94F98CC1221EECD100B0FEFC /* UIImageView+WebCache.m in Sources */,
+				94F98CEB221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodeld in Sources */,
 				94F98CC6221EECD100B0FEFC /* SDWebImageDecoder.m in Sources */,
 				94F98CC8221EECD100B0FEFC /* SDWebImageDownloaderOperation.m in Sources */,
 				94F98CBD221EECD100B0FEFC /* SDWebImagePrefetcher.m in Sources */,
@@ -857,6 +877,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		94F98CE9221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				94F98CEA221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodel */,
+			);
+			currentVersion = 94F98CEA221F294A00B0FEFC /* CricketTeamSupriya.xcdatamodel */;
+			path = CricketTeamSupriya.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 942B3B6D221EB32E00039BAF /* Project object */;
 }

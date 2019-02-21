@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="age" attributeType="String" syncable="YES"/>
+        <attribute name="basePrice" attributeType="String" syncable="YES"/>
+        <attribute name="batsman" attributeType="String" syncable="YES"/>
+        <attribute name="bowler" attributeType="String" syncable="YES"/>
+        <attribute name="building" attributeType="String" syncable="YES"/>
+        <attribute name="categoryName" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="picture" attributeType="String" syncable="YES"/>
+        <attribute name="playerId" attributeType="String" syncable="YES"/>
+        <attribute name="points" attributeType="String" syncable="YES"/>
+        <attribute name="pointsType" attributeType="String" syncable="YES"/>
+        <attribute name="team" attributeType="String" syncable="YES"/>
+        <attribute name="teamStatus" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Player" positionX="-63" positionY="-18" width="128" height="240"/>
+    </elements>
+</model>

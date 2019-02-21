@@ -32,14 +32,15 @@ class CTNetworkManager: NSObject {
     //MARK: - SERVER REQUEST
     
     func fetchFromServer(withURLStr: String, allParameters: [String : Any]?, methodType: HTTPMethod = .post, isCachingRequired:Bool=false, completionBlock: @escaping ((JSON, Data?) -> Void)) {
+        
         var json: JSON = ["value": false,
                           "data": ["message" : "Something went wrong"]]
         
         
-        var requestHeaders: HTTPHeaders = ["Content-Type" : "application/x-www-form-urlencoded"]
+        var requestHeaders: HTTPHeaders?
         
         if let tokenVal = getUserToken() {
-            requestHeaders.add(name: "token", value: tokenVal)
+            requestHeaders = ["token" : tokenVal]
         }
         
         

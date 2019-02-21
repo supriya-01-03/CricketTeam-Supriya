@@ -17,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
         if getUserToken() != "" {
+            PersistenceServeice.saveContext()
+            
             //Already logged in user
             let playerListVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "playerListView") as! CTPlayersListViewController
             self.window?.rootViewController = UINavigationController(rootViewController: playerListVC)

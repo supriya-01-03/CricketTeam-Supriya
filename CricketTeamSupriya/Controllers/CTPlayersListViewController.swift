@@ -44,13 +44,25 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
         CTRequestManager.getSharedManager().getAllPlayers { (response) in
             self.isLoading = false
             if response["success"].boolValue {
-                self.dataArray = response["data"]["players"].arrayValue
+                self.updateDatabase(withValues: response["data"]["players"].arrayValue)
             }
             else {
                 showAlert(titleVal: "Error", messageVal: "Something went wrong. Please try after sometime.", withNavController: self.navigationController, completion: { (_) in
                 })
             }
             self.listCollectionViewView.reloadData()
+        }
+    }
+    
+    
+    //MARK: - Update DB
+    
+    private func updateDatabase(withValues: [JSON]) {
+        Player.savePlayers(details: withValues) { (isComplete) in
+            Player.getAllPlayers(completion: { (listPlayers) in
+                self.dataArray = listPlayers
+                self.listCollectionViewView.reloadData()
+            })
         }
     }
     
