@@ -35,5 +35,11 @@ class CTRequestManager: NSObject {
         }
     }
     
+    func getAllPlayers(completion: @escaping ((JSON) -> Void)) {
+        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "players", allParameters: nil) { (serverResponse, _) in
+            completion(serverResponse)
+        }
+    }
+    
     
 }

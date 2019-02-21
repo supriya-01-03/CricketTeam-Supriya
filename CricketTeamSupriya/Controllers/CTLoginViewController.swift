@@ -77,6 +77,9 @@ class CTLoginViewController: UIViewController, UITextFieldDelegate {
                         
                         setUserToken(tokenVal: response["data"]["token"].stringValue)
                         
+                        self.emailTF.resignFirstResponder()
+                        self.passwordTF.resignFirstResponder()
+                        
                         showAlert(titleVal: "", messageVal: response["msg"].stringValue, withNavController: self.navigationController, completion: { (_) in
                             
                             let playerListVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "playerListView") as! CTPlayersListViewController
@@ -105,11 +108,13 @@ class CTLoginViewController: UIViewController, UITextFieldDelegate {
                 }
             }
             else {
-                showErrorAlert(titleVal: "Error", messageVal: "Please enter password.", withNavController: self.navigationController)
+                showAlert(titleVal: "Error", messageVal: "Please enter password.", withNavController: self.navigationController) { (_) in
+                }
             }
         }
         else {
-            showErrorAlert(titleVal: "Error", messageVal: "Please enter valid email.", withNavController: self.navigationController)
+            showAlert(titleVal: "Error", messageVal: "Please enter valid email.", withNavController: self.navigationController) { (_) in
+            }
         }
     }
     

@@ -36,7 +36,14 @@ class CTNetworkManager: NSObject {
                           "data": ["message" : "Something went wrong"]]
         
         
-        Alamofire.AF.request((BASE_URL + withURLStr), method: methodType, parameters: allParameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
+        var requestHeaders: HTTPHeaders = ["Content-Type" : "application/x-www-form-urlencoded"]
+        
+        if let tokenVal = getUserToken() {
+            requestHeaders.add(name: "token", value: tokenVal)
+        }
+        
+        
+        Alamofire.AF.request((BASE_URL + withURLStr), method: methodType, parameters: allParameters, encoding: JSONEncoding.default, headers: requestHeaders).responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
             case .success(_):

@@ -18,7 +18,7 @@ func setUserToken(tokenVal: String) {
     UserDefaults.standard.set(tokenVal, forKey: "userToken")
 }
 
-func getUserToken() -> String {
+func getUserToken() -> String? {
     if let tokenVal = UserDefaults.standard.value(forKey: "userToken") as? String {
         return tokenVal
     }
@@ -80,4 +80,14 @@ func showAlert(titleVal: String, messageVal: String, withNavController: UINaviga
     }
     errorAlert.addAction(DestructiveAction)
     withNavController?.present(errorAlert, animated: true, completion: nil)
+}
+
+func getImageURL(fromURLString: String) -> URL? {
+    var returnImageURLString = fromURLString
+    let escapedString = fromURLString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+    if escapedString != nil {
+        returnImageURLString = escapedString!
+    }
+    
+    return URL(string: returnImageURLString)
 }

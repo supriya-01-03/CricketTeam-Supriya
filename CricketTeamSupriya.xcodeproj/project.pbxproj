@@ -21,11 +21,9 @@
 		94F98C8E221EE06D00B0FEFC /* CTRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C8D221EE06D00B0FEFC /* CTRequestManager.swift */; };
 		94F98C90221EE98600B0FEFC /* CTCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C8F221EE98600B0FEFC /* CTCustomCells.swift */; };
 		94F98CBD221EECD100B0FEFC /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C95221EECCF00B0FEFC /* SDWebImagePrefetcher.m */; };
-		94F98CBE221EECD100B0FEFC /* DACircularProgress in Resources */ = {isa = PBXBuildFile; fileRef = 94F98C97221EECCF00B0FEFC /* DACircularProgress */; };
 		94F98CBF221EECD100B0FEFC /* FLAnimatedImage in Resources */ = {isa = PBXBuildFile; fileRef = 94F98C98221EECCF00B0FEFC /* FLAnimatedImage */; };
 		94F98CC0221EECD100B0FEFC /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98C9E221EECCF00B0FEFC /* UIImage+WebP.m */; };
 		94F98CC1221EECD100B0FEFC /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA2221EECD000B0FEFC /* UIImageView+WebCache.m */; };
-		94F98CC2221EECD100B0FEFC /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA7221EECD000B0FEFC /* UIView+WebCache.m */; };
 		94F98CC3221EECD100B0FEFC /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA8221EECD000B0FEFC /* SDWebImageCompat.m */; };
 		94F98CC4221EECD100B0FEFC /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CA9221EECD000B0FEFC /* UIImage+MultiFormat.m */; };
 		94F98CC5221EECD100B0FEFC /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CAA221EECD000B0FEFC /* SDWebImageManager.m */; };
@@ -38,9 +36,12 @@
 		94F98CCC221EECD100B0FEFC /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB4221EECD100B0FEFC /* UIButton+WebCache.m */; };
 		94F98CCD221EECD100B0FEFC /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB6221EECD100B0FEFC /* UIImage+GIF.m */; };
 		94F98CCE221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB7221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m */; };
-		94F98CCF221EECD100B0FEFC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB8221EECD100B0FEFC /* UIView+WebCacheOperation.m */; };
 		94F98CD0221EECD100B0FEFC /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CB9221EECD100B0FEFC /* SDImageCacheConfig.m */; };
 		94F98CD1221EECD100B0FEFC /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CBA221EECD100B0FEFC /* MKAnnotationView+WebCache.m */; };
+		94F98CDD221F0CFA00B0FEFC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CDC221F0CFA00B0FEFC /* UIView+WebCacheOperation.m */; };
+		94F98CE0221F0D3100B0FEFC /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CDF221F0D3100B0FEFC /* UIView+WebCache.m */; };
+		94F98CE5221F0D9000B0FEFC /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CE2221F0D8F00B0FEFC /* DACircularProgressView.m */; };
+		94F98CE6221F0D9000B0FEFC /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F98CE3221F0D8F00B0FEFC /* DALabeledCircularProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,11 +82,9 @@
 		942B3BB5221EDA0900039BAF /* CTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTNetworkManager.swift; sourceTree = "<group>"; };
 		94F98C8D221EE06D00B0FEFC /* CTRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTRequestManager.swift; sourceTree = "<group>"; };
 		94F98C8F221EE98600B0FEFC /* CTCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTCustomCells.swift; sourceTree = "<group>"; };
-		94F98C93221EECCE00B0FEFC /* CricketTeamSupriya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricketTeamSupriya-Bridging-Header.h"; sourceTree = "<group>"; };
 		94F98C94221EECCE00B0FEFC /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = SOURCE_ROOT; };
 		94F98C95221EECCF00B0FEFC /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImagePrefetcher.m; sourceTree = SOURCE_ROOT; };
 		94F98C96221EECCF00B0FEFC /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDecoder.h; sourceTree = SOURCE_ROOT; };
-		94F98C97221EECCF00B0FEFC /* DACircularProgress */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DACircularProgress; path = CricketTeamSupriya/Utils/SDWebImage/DACircularProgress; sourceTree = SOURCE_ROOT; };
 		94F98C98221EECCF00B0FEFC /* FLAnimatedImage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FLAnimatedImage; path = CricketTeamSupriya/Utils/SDWebImage/FLAnimatedImage; sourceTree = SOURCE_ROOT; };
 		94F98C99221EECCF00B0FEFC /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageDownloader.h; sourceTree = SOURCE_ROOT; };
 		94F98C9A221EECCF00B0FEFC /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageOperation.h; sourceTree = SOURCE_ROOT; };
@@ -93,15 +92,12 @@
 		94F98C9C221EECCF00B0FEFC /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+WebP.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+WebP.h"; sourceTree = SOURCE_ROOT; };
 		94F98C9D221EECCF00B0FEFC /* NSImage+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/NSImage+WebCache.h"; sourceTree = SOURCE_ROOT; };
 		94F98C9E221EECCF00B0FEFC /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WebP.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+WebP.m"; sourceTree = SOURCE_ROOT; };
-		94F98C9F221EECCF00B0FEFC /* UIView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCache.h"; sourceTree = SOURCE_ROOT; };
 		94F98CA0221EECCF00B0FEFC /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = CricketTeamSupriya/Utils/SDWebImage/SDImageCache.h; sourceTree = SOURCE_ROOT; };
 		94F98CA1221EECD000B0FEFC /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "CricketTeamSupriya/Utils/SDWebImage/NSData+ImageContentType.h"; sourceTree = SOURCE_ROOT; };
 		94F98CA2221EECD000B0FEFC /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImageView+WebCache.m"; sourceTree = SOURCE_ROOT; };
 		94F98CA3221EECD000B0FEFC /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageCompat.h; sourceTree = SOURCE_ROOT; };
-		94F98CA4221EECD000B0FEFC /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCacheOperation.h"; sourceTree = SOURCE_ROOT; };
 		94F98CA5221EECD000B0FEFC /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImagePrefetcher.h; sourceTree = SOURCE_ROOT; };
 		94F98CA6221EECD000B0FEFC /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+GIF.h"; sourceTree = SOURCE_ROOT; };
-		94F98CA7221EECD000B0FEFC /* UIView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCache.m"; sourceTree = SOURCE_ROOT; };
 		94F98CA8221EECD000B0FEFC /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageCompat.m; sourceTree = SOURCE_ROOT; };
 		94F98CA9221EECD000B0FEFC /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+MultiFormat.m"; sourceTree = SOURCE_ROOT; };
 		94F98CAA221EECD000B0FEFC /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = CricketTeamSupriya/Utils/SDWebImage/SDWebImageManager.m; sourceTree = SOURCE_ROOT; };
@@ -118,12 +114,19 @@
 		94F98CB5221EECD100B0FEFC /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = SOURCE_ROOT; };
 		94F98CB6221EECD100B0FEFC /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImage+GIF.m"; sourceTree = SOURCE_ROOT; };
 		94F98CB7221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = SOURCE_ROOT; };
-		94F98CB8221EECD100B0FEFC /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCacheOperation.m"; sourceTree = SOURCE_ROOT; };
 		94F98CB9221EECD100B0FEFC /* SDImageCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = CricketTeamSupriya/Utils/SDWebImage/SDImageCacheConfig.m; sourceTree = SOURCE_ROOT; };
 		94F98CBA221EECD100B0FEFC /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+WebCache.m"; path = "CricketTeamSupriya/Utils/SDWebImage/MKAnnotationView+WebCache.m"; sourceTree = SOURCE_ROOT; };
 		94F98CBB221EECD100B0FEFC /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIButton+WebCache.h"; sourceTree = SOURCE_ROOT; };
 		94F98CBC221EECD100B0FEFC /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+WebCache.h"; path = "CricketTeamSupriya/Utils/SDWebImage/MKAnnotationView+WebCache.h"; sourceTree = SOURCE_ROOT; };
-		94F98CD2221EED0900B0FEFC /* CricketTeamSupriya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricketTeamSupriya-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		94F98CD3221F0AC800B0FEFC /* CricketTeamSupriya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricketTeamSupriya-Bridging-Header.h"; sourceTree = "<group>"; };
+		94F98CDB221F0CFA00B0FEFC /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCacheOperation.h"; sourceTree = SOURCE_ROOT; };
+		94F98CDC221F0CFA00B0FEFC /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "CricketTeamSupriya/Utils/SDWebImage/UIView+WebCacheOperation.m"; sourceTree = SOURCE_ROOT; };
+		94F98CDE221F0D3100B0FEFC /* UIView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCache.h"; sourceTree = "<group>"; };
+		94F98CDF221F0D3100B0FEFC /* UIView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCache.m"; sourceTree = "<group>"; };
+		94F98CE1221F0D8F00B0FEFC /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DACircularProgressView.h; path = CricketTeamSupriya/Utils/SDWebImage/DACircularProgressView.h; sourceTree = SOURCE_ROOT; };
+		94F98CE2221F0D8F00B0FEFC /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DACircularProgressView.m; path = CricketTeamSupriya/Utils/SDWebImage/DACircularProgressView.m; sourceTree = SOURCE_ROOT; };
+		94F98CE3221F0D8F00B0FEFC /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DALabeledCircularProgressView.m; path = CricketTeamSupriya/Utils/SDWebImage/DALabeledCircularProgressView.m; sourceTree = SOURCE_ROOT; };
+		94F98CE4221F0D9000B0FEFC /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DALabeledCircularProgressView.h; path = CricketTeamSupriya/Utils/SDWebImage/DALabeledCircularProgressView.h; sourceTree = SOURCE_ROOT; };
 		F027DEAEA84BA2BADFC0BD45 /* Pods-CricketTeamSupriya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketTeamSupriya.debug.xcconfig"; path = "Target Support Files/Pods-CricketTeamSupriya/Pods-CricketTeamSupriya.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,7 +195,7 @@
 				942B3BA8221EB41700039BAF /* View */,
 				942B3BA6221EB3F900039BAF /* Controllers */,
 				942B3B78221EB32F00039BAF /* AppDelegate.swift */,
-				94F98CD2221EED0900B0FEFC /* CricketTeamSupriya-Bridging-Header.h */,
+				94F98CD3221F0AC800B0FEFC /* CricketTeamSupriya-Bridging-Header.h */,
 				942B3B7F221EB33000039BAF /* Assets.xcassets */,
 				942B3B81221EB33000039BAF /* LaunchScreen.storyboard */,
 				942B3B84221EB33000039BAF /* Info.plist */,
@@ -264,8 +267,12 @@
 		94F98C91221EEC4800B0FEFC /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
-				94F98C97221EECCF00B0FEFC /* DACircularProgress */,
+				94F98CD4221F0BAE00B0FEFC /* DACircularProgress */,
 				94F98C98221EECCF00B0FEFC /* FLAnimatedImage */,
+				94F98CE1221F0D8F00B0FEFC /* DACircularProgressView.h */,
+				94F98CE2221F0D8F00B0FEFC /* DACircularProgressView.m */,
+				94F98CE4221F0D9000B0FEFC /* DALabeledCircularProgressView.h */,
+				94F98CE3221F0D8F00B0FEFC /* DALabeledCircularProgressView.m */,
 				94F98CBC221EECD100B0FEFC /* MKAnnotationView+WebCache.h */,
 				94F98CBA221EECD100B0FEFC /* MKAnnotationView+WebCache.m */,
 				94F98CA1221EECD000B0FEFC /* NSData+ImageContentType.h */,
@@ -301,14 +308,20 @@
 				94F98CB7221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m */,
 				94F98CAF221EECD000B0FEFC /* UIImageView+WebCache.h */,
 				94F98CA2221EECD000B0FEFC /* UIImageView+WebCache.m */,
-				94F98C9F221EECCF00B0FEFC /* UIView+WebCache.h */,
-				94F98CA7221EECD000B0FEFC /* UIView+WebCache.m */,
-				94F98CA4221EECD000B0FEFC /* UIView+WebCacheOperation.h */,
-				94F98CB8221EECD100B0FEFC /* UIView+WebCacheOperation.m */,
-				94F98C93221EECCE00B0FEFC /* CricketTeamSupriya-Bridging-Header.h */,
+				94F98CDE221F0D3100B0FEFC /* UIView+WebCache.h */,
+				94F98CDF221F0D3100B0FEFC /* UIView+WebCache.m */,
+				94F98CDB221F0CFA00B0FEFC /* UIView+WebCacheOperation.h */,
+				94F98CDC221F0CFA00B0FEFC /* UIView+WebCacheOperation.m */,
 			);
 			name = SDWebImage;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		94F98CD4221F0BAE00B0FEFC /* DACircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
 		F8E28C5C76E46AFF17EEAD8C /* Pods */ = {
@@ -428,7 +441,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				942B3B83221EB33000039BAF /* LaunchScreen.storyboard in Resources */,
-				94F98CBE221EECD100B0FEFC /* DACircularProgress in Resources */,
 				94F98CBF221EECD100B0FEFC /* FLAnimatedImage in Resources */,
 				942B3B80221EB33000039BAF /* Assets.xcassets in Resources */,
 				942B3B7E221EB32F00039BAF /* Main.storyboard in Resources */,
@@ -483,12 +495,12 @@
 			files = (
 				94F98CCE221EECD100B0FEFC /* UIImageView+HighlightedWebCache.m in Sources */,
 				94F98CCD221EECD100B0FEFC /* UIImage+GIF.m in Sources */,
+				94F98CE0221F0D3100B0FEFC /* UIView+WebCache.m in Sources */,
 				94F98CC4221EECD100B0FEFC /* UIImage+MultiFormat.m in Sources */,
+				94F98CE5221F0D9000B0FEFC /* DACircularProgressView.m in Sources */,
 				94F98CC9221EECD100B0FEFC /* SDImageCache.m in Sources */,
-				94F98CCF221EECD100B0FEFC /* UIView+WebCacheOperation.m in Sources */,
 				94F98CD0221EECD100B0FEFC /* SDImageCacheConfig.m in Sources */,
 				94F98CC5221EECD100B0FEFC /* SDWebImageManager.m in Sources */,
-				94F98CC2221EECD100B0FEFC /* UIView+WebCache.m in Sources */,
 				94F98CCB221EECD100B0FEFC /* SDWebImageDownloader.m in Sources */,
 				94F98CC3221EECD100B0FEFC /* SDWebImageCompat.m in Sources */,
 				94F98C8E221EE06D00B0FEFC /* CTRequestManager.swift in Sources */,
@@ -498,6 +510,7 @@
 				94F98CC6221EECD100B0FEFC /* SDWebImageDecoder.m in Sources */,
 				94F98CC8221EECD100B0FEFC /* SDWebImageDownloaderOperation.m in Sources */,
 				94F98CBD221EECD100B0FEFC /* SDWebImagePrefetcher.m in Sources */,
+				94F98CDD221F0CFA00B0FEFC /* UIView+WebCacheOperation.m in Sources */,
 				942B3BB2221ECAEF00039BAF /* CTLoginViewController.swift in Sources */,
 				942B3B79221EB32F00039BAF /* AppDelegate.swift in Sources */,
 				94F98CCA221EECD100B0FEFC /* NSData+ImageContentType.m in Sources */,
@@ -505,6 +518,7 @@
 				942B3BB0221ECA2100039BAF /* CTPlayersListViewController.swift in Sources */,
 				942B3BAE221EBD8900039BAF /* Utils.swift in Sources */,
 				94F98CD1221EECD100B0FEFC /* MKAnnotationView+WebCache.m in Sources */,
+				94F98CE6221F0D9000B0FEFC /* DALabeledCircularProgressView.m in Sources */,
 				94F98CC7221EECD100B0FEFC /* NSImage+WebCache.m in Sources */,
 				942B3BB6221EDA0900039BAF /* CTNetworkManager.swift in Sources */,
 			);
@@ -693,7 +707,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.spm.CricketTeamSupriya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CricketTeamSupriya/Utils/New Group/CricketTeamSupriya-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CricketTeamSupriya/CricketTeamSupriya-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,7 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spm.CricketTeamSupriya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CricketTeamSupriya/Utils/New Group/CricketTeamSupriya-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CricketTeamSupriya/CricketTeamSupriya-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
