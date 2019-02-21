@@ -23,6 +23,8 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Select player for details"
         self.getPlayers()
     }
     

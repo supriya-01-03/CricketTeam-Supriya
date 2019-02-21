@@ -25,6 +25,10 @@ func getUserToken() -> String? {
     return ""
 }
 
+func getPlaceholderImage() -> UIImage? {
+    return UIImage(named: "placeholder")
+}
+
 
 //MARK: - UI Helpers
 

@@ -35,7 +35,7 @@ class CTPlayerListCollectionViewCell: UICollectionViewCell {
     func setData(detailData: JSON) {
         self.nameLabel.text = detailData["name"].stringValue.capitalized
         
-        self.displayImageView.sd_setImage(with: getImageURL(fromURLString: detailData["picture"].stringValue), placeholderImage: UIImage(named: "placeholder"), options: [.highPriority, .retryFailed]) { (img, err, cache, url) in
+        self.displayImageView.sd_setImage(with: getImageURL(fromURLString: detailData["picture"].stringValue), placeholderImage: nil, options: [.highPriority, .retryFailed]) { (img, err, cache, url) in
             self.displayImageView.image = img
         }
     }
