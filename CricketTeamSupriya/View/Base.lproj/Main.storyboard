@@ -219,27 +219,26 @@
                                                     <rect key="frame" x="4" y="4" width="172" height="170"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Njj-rW-oGy">
-                                                            <rect key="frame" x="46" y="8" width="80" height="80"/>
+                                                            <rect key="frame" x="43" y="8" width="86" height="86"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" secondItem="Njj-rW-oGy" secondAttribute="width" multiplier="1:1" id="gtD-T1-NPc"/>
-                                                                <constraint firstAttribute="width" constant="80" id="q9G-RY-hHq"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-cZ-3KF">
-                                                            <rect key="frame" x="3" y="96" width="166" height="66"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRM-cZ-3KF">
+                                                            <rect key="frame" x="3" y="102" width="166" height="16.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="uRM-cZ-3KF" firstAttribute="top" secondItem="Njj-rW-oGy" secondAttribute="bottom" constant="8" id="104-tA-eFX"/>
                                                         <constraint firstItem="Njj-rW-oGy" firstAttribute="top" secondItem="Gtd-EA-zhS" secondAttribute="top" constant="8" id="34q-qP-2UW"/>
                                                         <constraint firstItem="uRM-cZ-3KF" firstAttribute="leading" secondItem="Gtd-EA-zhS" secondAttribute="leading" constant="3" id="3UF-bV-Xwt"/>
                                                         <constraint firstItem="Njj-rW-oGy" firstAttribute="centerX" secondItem="Gtd-EA-zhS" secondAttribute="centerX" id="4oR-Vg-d3R"/>
-                                                        <constraint firstItem="uRM-cZ-3KF" firstAttribute="bottom" secondItem="Gtd-EA-zhS" secondAttribute="bottom" constant="-8" id="QQ9-Hm-hPY"/>
+                                                        <constraint firstItem="Njj-rW-oGy" firstAttribute="width" secondItem="Gtd-EA-zhS" secondAttribute="width" multiplier="0.5" id="JQi-RB-Abd"/>
                                                         <constraint firstItem="uRM-cZ-3KF" firstAttribute="centerX" secondItem="Gtd-EA-zhS" secondAttribute="centerX" id="ck7-JH-X6y"/>
-                                                        <constraint firstItem="Njj-rW-oGy" firstAttribute="bottom" secondItem="uRM-cZ-3KF" secondAttribute="top" constant="-8" id="qJI-II-zKO"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -296,7 +295,7 @@
                                     <constraint firstAttribute="width" secondItem="ZZi-bG-LGK" secondAttribute="height" multiplier="1:1" id="tJK-RL-Rwu"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="25" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-AS-fNR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="25" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-AS-fNR">
                                 <rect key="frame" x="16" y="302" width="288" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>

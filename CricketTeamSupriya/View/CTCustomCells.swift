@@ -22,13 +22,18 @@ class CTPlayerListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var displayImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+//    @IBOutlet weak var displayImageviewWidthConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.displayImageView.layer.cornerRadius = self.displayImageView.frame.height/2
+//        self.displayImageviewWidthConstraint.constant = (self.frame.width*0.45)
+        
+        self.displayImageView.layer.cornerRadius = ((((UIScreen.main.bounds.width-16)/3)*0.5)/2)
         self.displayImageView.layer.borderColor = UIColor.gray.cgColor
         self.displayImageView.layer.borderWidth = 1.0
+        
+        
         
     }
     

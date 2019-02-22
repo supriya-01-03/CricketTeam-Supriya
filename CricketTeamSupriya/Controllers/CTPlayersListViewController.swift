@@ -92,7 +92,7 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.row < dataArray.count {
-            return CGSize(width: collectionView.frame.width/3, height: collectionView.frame.width/3)
+            return CGSize(width: collectionView.frame.width/3, height: (((UIScreen.main.bounds.width-16)/3)*0.5 + 60))
         }
         else {
             return collectionView.frame.size
