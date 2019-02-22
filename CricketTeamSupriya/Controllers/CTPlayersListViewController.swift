@@ -47,6 +47,16 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
         self.setNavigation()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.filterTableView.frame = CGRect(x: self.view.frame.width, y: self.listCollectionViewView.frame.origin.y, width: 180, height: self.listCollectionViewView.frame.height)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
@@ -168,13 +178,6 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
         }
         return 1
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        if indexPath.section < filterKeys.count {
-//            return 44.0
-//        }
-//        return 60.0
-//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section < filterKeys.count {

@@ -33,7 +33,7 @@ class CTNetworkManager: NSObject {
     
     func fetchFromServer(withURLStr: String, allParameters: [String : Any]?, methodType: HTTPMethod = .post, completionBlock: @escaping ((JSON) -> Void)) {
         
-        var json: JSON = ["value": false,
+        var json: JSON = ["success": false,
                           "data": ["message" : "Something went wrong"]]
         
         
@@ -56,7 +56,7 @@ class CTNetworkManager: NSObject {
                 
             case .failure(_):
                 if let err = response.result.error {
-                    json = ["value": false,
+                    json = ["success": false,
                             "data": ["message" : err.localizedDescription]]
                 }
                 completionBlock(json)
