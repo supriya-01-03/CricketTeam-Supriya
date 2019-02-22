@@ -262,17 +262,124 @@
                                     <outlet property="delegate" destination="Zh3-oz-gZx" id="cxn-e0-T35"/>
                                 </connections>
                             </collectionView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUK-4y-pnN" userLabel="filterView">
+                                <rect key="frame" x="0.0" y="10" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.30116930650684931" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="M93-Ky-ZRv">
+                                <rect key="frame" x="320" y="24" width="180" height="540"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="iLO-in-RNl"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="filterCell" id="3TS-qp-BKu" customClass="CTFilterTableviewCell" customModule="CricketTeamSupriya" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3TS-qp-BKu" id="lTL-jW-cxP">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="8do-Ol-v1a">
+                                                    <rect key="frame" x="8" y="14.5" width="15" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="Tjd-f0-LLz"/>
+                                                        <constraint firstAttribute="width" secondItem="8do-Ol-v1a" secondAttribute="height" multiplier="1:1" id="XDG-bW-Ltb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-lc-pzw">
+                                                    <rect key="frame" x="31" y="14" width="141" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nhO-lc-pzw" firstAttribute="leading" secondItem="8do-Ol-v1a" secondAttribute="trailing" constant="8" id="e6g-he-Fd3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="nhO-lc-pzw" secondAttribute="trailing" constant="8" id="8k7-Qo-gZo"/>
+                                            <constraint firstItem="8do-Ol-v1a" firstAttribute="leading" secondItem="3TS-qp-BKu" secondAttribute="leading" constant="8" id="WkY-Be-RpT"/>
+                                            <constraint firstItem="8do-Ol-v1a" firstAttribute="centerY" secondItem="3TS-qp-BKu" secondAttribute="centerY" id="eCb-2C-yUr"/>
+                                            <constraint firstItem="nhO-lc-pzw" firstAttribute="centerY" secondItem="3TS-qp-BKu" secondAttribute="centerY" id="fW6-N6-Jzc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="filterLabel" destination="nhO-lc-pzw" id="v0C-jH-Rzn"/>
+                                            <outlet property="selectImageview" destination="8do-Ol-v1a" id="L81-jh-5eE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="actionCell" id="LdW-5f-Lla" customClass="CTActionTableviewCell" customModule="CricketTeamSupriya" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="99.5" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LdW-5f-Lla" id="Ycc-Ia-XEo">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7h6-cJ-MqS">
+                                                    <rect key="frame" x="8" y="8" width="164" height="28"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4R-G3-KO7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="91.5" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                            <state key="normal" title="Apply Filter">
+                                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="applyButtonClicked:" destination="LdW-5f-Lla" eventType="touchUpInside" id="ej4-fY-rJE"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUC-41-stl">
+                                                            <rect key="frame" x="99.5" y="0.0" width="64.5" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                            <state key="normal" title="Clear all">
+                                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="clearButtonClicked:" destination="LdW-5f-Lla" eventType="touchUpInside" id="fRG-6X-ZY5"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="7h6-cJ-MqS" firstAttribute="centerY" secondItem="LdW-5f-Lla" secondAttribute="centerY" id="4sL-HP-dMC"/>
+                                            <constraint firstItem="7h6-cJ-MqS" firstAttribute="centerX" secondItem="LdW-5f-Lla" secondAttribute="centerX" id="GWk-9T-Bn3"/>
+                                            <constraint firstItem="7h6-cJ-MqS" firstAttribute="width" secondItem="LdW-5f-Lla" secondAttribute="width" constant="-16" id="RrG-UA-AWz"/>
+                                            <constraint firstItem="7h6-cJ-MqS" firstAttribute="height" secondItem="LdW-5f-Lla" secondAttribute="height" constant="-16" id="mA3-EG-r7A"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="applyButton" destination="D4R-G3-KO7" id="Sdp-ly-AwH"/>
+                                            <outlet property="clearButton" destination="NUC-41-stl" id="iho-s6-KO2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zh3-oz-gZx" id="YIB-d7-Rmh"/>
+                                    <outlet property="delegate" destination="Zh3-oz-gZx" id="xDh-zM-ViM"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="peD-ZS-2VE" firstAttribute="top" secondItem="yBz-Go-qJx" secondAttribute="top" constant="4" id="1WK-I5-whj"/>
+                            <constraint firstItem="M93-Ky-ZRv" firstAttribute="top" secondItem="peD-ZS-2VE" secondAttribute="top" id="3pR-d1-YHd"/>
+                            <constraint firstItem="lUK-4y-pnN" firstAttribute="centerY" secondItem="yBz-Go-qJx" secondAttribute="centerY" id="RSh-cn-dDb"/>
                             <constraint firstItem="peD-ZS-2VE" firstAttribute="leading" secondItem="yBz-Go-qJx" secondAttribute="leading" constant="4" id="SMI-eC-QuT"/>
                             <constraint firstItem="yBz-Go-qJx" firstAttribute="bottom" secondItem="peD-ZS-2VE" secondAttribute="bottom" constant="4" id="cgr-Ey-dVD"/>
+                            <constraint firstItem="M93-Ky-ZRv" firstAttribute="trailing" secondItem="yBz-Go-qJx" secondAttribute="trailing" constant="180" id="fgw-2k-jFr"/>
+                            <constraint firstItem="lUK-4y-pnN" firstAttribute="width" secondItem="8fE-cr-Ygf" secondAttribute="width" id="hCb-qH-Hi1"/>
                             <constraint firstItem="yBz-Go-qJx" firstAttribute="trailing" secondItem="peD-ZS-2VE" secondAttribute="trailing" constant="4" id="j2M-Ho-mbF"/>
+                            <constraint firstItem="lUK-4y-pnN" firstAttribute="height" secondItem="8fE-cr-Ygf" secondAttribute="height" id="k2v-5S-Eqg"/>
+                            <constraint firstItem="M93-Ky-ZRv" firstAttribute="bottom" secondItem="peD-ZS-2VE" secondAttribute="bottom" id="vZL-sg-ing"/>
+                            <constraint firstItem="lUK-4y-pnN" firstAttribute="centerX" secondItem="yBz-Go-qJx" secondAttribute="centerX" id="vd4-nl-mBc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yBz-Go-qJx"/>
                     </view>
                     <connections>
+                        <outlet property="filterBackView" destination="lUK-4y-pnN" id="Glp-DU-aE3"/>
+                        <outlet property="filterTableView" destination="M93-Ky-ZRv" id="vBY-MI-Fqh"/>
                         <outlet property="listCollectionViewView" destination="peD-ZS-2VE" id="eiZ-UM-URi"/>
                     </connections>
                 </viewController>
@@ -351,6 +458,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checked" width="32" height="32"/>
         <image name="loginBackground" width="1182" height="888"/>
         <image name="showPswd" width="32" height="32"/>
     </resources>
