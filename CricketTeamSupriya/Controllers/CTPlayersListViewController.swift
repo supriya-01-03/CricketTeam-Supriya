@@ -215,6 +215,12 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
             
             if response["success"].boolValue {
                 self.dataArray = response["data"]["players"].arrayValue
+            }else {
+                self.dataArray = []
+                if response["data"]["players"].arrayValue.isEmpty && response["msg"].stringValue != "" {
+                    showAlert(titleVal: "", messageVal: response["msg"].stringValue, withNavController: self.navigationController, completion: { (_) in
+                    })
+                }
             }
             
             self.toggleFilterView(nil)
@@ -240,16 +246,15 @@ class CTPlayersListViewController: UIViewController, UICollectionViewDataSource,
     
     @objc private func toggleFilterView(_ sender: UIButton?) {
         
-        print("\n toggleFilterView called")
-        
         self.isShowingFilter = !isShowingFilter
         
         if self.isShowingFilter {
+            self.filterTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+            
             UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseInOut], animations: {
                 self.filterBackView.alpha = 1
                 self.filterTableView.frame = CGRect(x: (self.view.frame.width - self.filterTableView.frame.width), y: self.filterTableView.frame.origin.y, width: self.filterTableView.frame.width, height: self.filterTableView.frame.height)
             }) { (_) in
-                self.filterTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
             }
         }
         else {
