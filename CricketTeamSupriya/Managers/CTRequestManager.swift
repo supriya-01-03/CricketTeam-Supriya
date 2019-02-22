@@ -48,7 +48,7 @@ class CTRequestManager: NSObject {
             parameters["building"] = buildingF
         }
         if team_statusF != "" {
-            parameters["team_status"] = Int(team_statusF)
+            parameters["team_status"] = team_statusF
         }
         
         
