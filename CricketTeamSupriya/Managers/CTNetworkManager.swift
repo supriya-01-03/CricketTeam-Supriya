@@ -31,7 +31,7 @@ class CTNetworkManager: NSObject {
     
     //MARK: - SERVER REQUEST
     
-    func fetchFromServer(withURLStr: String, allParameters: [String : Any]?, methodType: HTTPMethod = .post, isCachingRequired:Bool=false, completionBlock: @escaping ((JSON, Data?) -> Void)) {
+    func fetchFromServer(withURLStr: String, allParameters: [String : Any]?, methodType: HTTPMethod = .post, completionBlock: @escaping ((JSON) -> Void)) {
         
         var json: JSON = ["value": false,
                           "data": ["message" : "Something went wrong"]]
@@ -49,17 +49,8 @@ class CTNetworkManager: NSObject {
             switch(response.result) {
             case .success(_):
                 if let data = response.result.value {
-                    var resData: Data? = nil
                     json = JSON(data)
-                    if isCachingRequired {
-                        do {
-                            resData = try json.rawData()
-                        }
-                        catch let error {
-                            print("\n Error while json to data: \(error)")
-                        }
-                    }
-                    completionBlock(json, resData)
+                    completionBlock(json)
                 }
                 break
                 
@@ -68,7 +59,7 @@ class CTNetworkManager: NSObject {
                     json = ["value": false,
                             "data": ["message" : err.localizedDescription]]
                 }
-                completionBlock(json, nil)
+                completionBlock(json)
                 break
             }
         }

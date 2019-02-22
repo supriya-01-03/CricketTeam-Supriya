@@ -30,19 +30,36 @@ class CTRequestManager: NSObject {
     //MARK: - Make Requests
     
     func loginUser(emailValue: String, passwordValue: String, completion: @escaping ((JSON) -> Void)) {
-        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "user/login", allParameters: ["email": emailValue, "password": passwordValue]) { (serverResponse, _) in
+        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "user/login", allParameters: ["email": emailValue, "password": passwordValue]) { (serverResponse) in
             completion(serverResponse)
         }
     }
     
-    func getAllPlayers(completion: @escaping ((JSON) -> Void)) {
-        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "players", allParameters: nil) { (serverResponse, _) in
+    func getAllPlayers(categoryF: String = "", skillF: String = "", buildingF: String = "", team_statusF: String = "", completion: @escaping ((JSON) -> Void)) {
+        
+        var parameters: [String : Any] = [:]
+        if categoryF != "" {
+            parameters["category"] = categoryF
+        }
+        if skillF != "" {
+            parameters["skill"] = skillF
+        }
+        if buildingF != "" {
+            parameters["building"] = buildingF
+        }
+        if team_statusF != "" {
+            parameters["team_status"] = Int(team_statusF)
+        }
+        
+        
+        
+        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "players", allParameters: (parameters.isEmpty ? nil : parameters)) { (serverResponse) in
             completion(serverResponse)
         }
     }
     
     func getFilters(completion: @escaping ((JSON) -> Void)) {
-        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "players/filters", allParameters: nil, methodType: .get, isCachingRequired: false) { (serverResponse, _) in
+        CTNetworkManager.getSharedManager().fetchFromServer(withURLStr: "players/filters", allParameters: nil, methodType: .get) { (serverResponse) in
             completion(serverResponse)
         }
     }
